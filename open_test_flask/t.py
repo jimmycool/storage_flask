@@ -28,6 +28,6 @@ def files():
     return g 
 @app.route('/index/',methods=['Get'])
 def home():
-   return render_template('index.html')
+   return render_template('view.html')
 if __name__ == '__main__':
     app.run()     
