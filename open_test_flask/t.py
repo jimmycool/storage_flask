@@ -25,6 +25,9 @@ def files():
     with open("files.txt","r") as r:
      g=g+r.read()
      
-    return g             
+    return g 
+@app.route('/index/',methods=['Get'])
+def home():
+   return render_template('index.html')
 if __name__ == '__main__':
     app.run()     
